@@ -1,0 +1,80 @@
+.navbar{
+    width: 95%;
+    margin: auto;
+    border-radius: 20px ;
+}
+header{
+    background-color: #66023c;
+    height: 80vh;
+}
+#part1{
+    display: flex;
+    width: 100%;
+}
+#part1 img{
+    width: inherit;
+    height: 100px;
+}
+#part1 #wishbg{
+    width: 0%;
+    padding-top: 20px;
+    display: flex;
+    margin: auto;
+    height: 20vh;
+}
+#wish{
+    display: none;
+    font-family: 'Satisfy', cursive;
+    position: absolute;
+    font-size: 10vh;
+    color:#e5b80b;
+    -webkit-text-stroke:0.3vh #302b0e ;
+    margin-top: 45px;
+    margin-left: 580px;
+
+}
+/* tablets portrait */
+@media screen and (max-width: 1024px) {
+    #part1 #wishbg{
+        width: 0%;
+        height: 15vh;
+        /* transition-duration: ""; */
+    }
+    #wish{
+        display: none;
+
+        font-size: 7vh;
+        margin-left: 320px;
+        margin-top: 50px;
+    }
+  }
+  /* medium level */
+  @media screen and (max-width: 767px){
+    #part1 #wishbg{
+        width: 0%;
+        height: 12vh;
+
+    }
+    #wish{
+        display: none;
+        font-size: 5vh;
+        margin-left: 240px;
+        margin-top: 50px;
+    }
+  }
+
+  /* mobile */
+  @media screen and (max-width: 480px) {
+    #part1 #wishbg{
+        width: 0%;
+        height: 12vh;
+
+    }
+    #wish{
+        display: none;
+        font-size: 3vh;
+        margin-left: 160px;
+        margin-top: 65px;
+    }
+  }
+
